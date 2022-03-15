@@ -1,0 +1,420 @@
+@charset "utf-8";
+
+#wrap{
+  min-width: 320px;
+  max-width: 450px;
+  margin: 0 auto;
+  position: relative;
+}
+
+/* ================== header ==================== */
+header{
+  width: 100%;
+  height: 50px;
+  background-color: #e4f0ff;
+  position: fixed;
+  top: 0;
+  z-index: 99;
+  border-bottom: 1px solid #448ef6;
+  max-width: 450px;
+  margin: 0 auto;
+}
+header h1 a{
+  display: block;
+  width: 100px;
+  height: 50px;
+  background: url(../img/logo.png) no-repeat center / 90px auto;
+  margin: 0 auto;
+}
+header button{
+  width: 50px;
+  height: 50px;
+}
+header .login{
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url(../img/icon01.png) no-repeat center / 23px auto;
+}
+header .search{
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: url(../img/icon02.png) no-repeat center / 23px auto;
+}
+
+/* ================== #top ==================== */
+#top{
+  width: 100%;
+  height: 90px;
+  background-color: #e4f0ff;
+  border-bottom: 1px solid #448ef6;
+}
+#top li{
+  float: left;
+  margin-top: 50px;
+  margin-left: 15px;
+}
+#top li a{
+  color: #393939;
+  font-size: 14px;
+  width: 65px;
+  height: 40px;
+  display: block;
+  line-height: 40px;
+}
+
+/* ================== #container ==================== */
+#container{
+  margin: 20px auto;
+}
+.more{
+  color: #4c4c4c;
+  font-size: 12px;
+  position: absolute;
+  top: 2px;
+  right: 20px;
+  width: 45px;
+  height: 20px;
+  display: block;
+  line-height: 20px;
+}
+h2{
+  margin-left: 20px;
+  font-size: 20px;
+  font-weight: 600;
+}
+.con_title{
+  margin-bottom: 20px;
+  position: relative;
+}
+.img_box{
+  overflow: hidden;
+  position: relative;
+}
+.btn_play{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  color: transparent;
+  font-size: 0;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.3) url(../img/icon08.png) no-repeat center / 21px auto;
+  opacity: 0;
+  transition: all 0.2s;
+}
+li:hover .btn_play{
+  opacity: 1;
+}
+li.on .btn_play{
+  background: rgba(0, 0, 0, 0.3) url(../img/icon07.png) no-repeat center / 21px auto;
+}
+/* ================== .playing ================== */
+.playing ul{
+  width: 100%;
+  position: relative;
+  white-space: nowrap; 
+  overflow-x: scroll; 
+  scrollbar-width: none;  
+  -ms-overflow-style: none;
+  overflow-y: hidden;
+}
+.playing li{
+  margin-top: 10px;
+  display: inline-block;
+  width: 35%;
+}
+.playing li.on{
+  transform: scale(1.3);
+  position: relative;
+  z-index: 10;
+}
+
+/* ================== .playlist ================== */
+.playlist{
+  margin-top: 40px;
+}
+.playlist ul{
+  width: 100%;
+  position: relative;
+  white-space: nowrap; 
+  overflow-x: scroll; 
+  scrollbar-width: none;  
+  -ms-overflow-style: none;
+}
+.playlist li{
+  margin-top: 10px;
+  display: inline-block;
+  width: 35%;
+}
+.playlist li:first-of-type{
+  margin-left: 6%;
+}
+.playlist li .img_box{
+  width: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+  white-space: normal;
+}
+.playlist li .img_box img{
+  width: 50%;
+  padding: 0;
+  margin: 0;
+  font-size: 0;
+  vertical-align: top;
+}
+
+/* ================== .rec_music ================== */
+.rec_music{
+  margin-top: 40px;
+}
+.rec_music ul{
+  width: 100%;
+  white-space: nowrap; 
+  overflow-x: scroll; 
+  scrollbar-width: none;  
+  -ms-overflow-style: none;
+}
+.rec_music li{
+  margin-top: 10px;
+  display: inline-block;
+  width: 80%;
+  margin-left: 20px;
+}
+.rec_music li h3{
+  font-size: 12px;
+  font-weight: 600;
+  position: absolute;
+  top: 15px;
+  left: 90px;
+}
+.rec_music li h4{
+  font-size: 12px;
+  font-weight: 400;
+  position: absolute;
+  top: 37px;
+  left: 90px;
+}
+.rec_music .m_list{
+  display: block;
+  width: 100%;
+  height: 60px;
+  position: relative;
+  margin-bottom: 10px;
+}
+.rec_music .m_list div{
+  width: 60px;
+  height: 60px;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+.rec_music .btn_imp{
+  display: block;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: url(../img/icon10.png) no-repeat center / 30px;
+}
+
+/* ================== .m_chart ================== */
+.m_chart{
+  margin-top: 40px;
+}
+.m_chart ul{
+  width: 100%;
+  position: relative;
+  white-space: nowrap; 
+  overflow-x: scroll; 
+  scrollbar-width: none;  
+  -ms-overflow-style: none;
+}
+.m_chart li{
+  margin-top: 10px;
+  display: inline-block;
+  width: 80%;
+  margin-left: 20px;
+  position: relative;
+}
+.m_chart li h3{
+  font-size: 12px;
+  font-weight: 600;
+  position: absolute;
+  top: 15px;
+  left: 105px;
+}
+.m_chart li h4{
+  font-size: 12px;
+  font-weight: 400;
+  position: absolute;
+  top: 37px;
+  left: 105px;
+}
+.m_chart .m_list{
+  width: 100%;
+  height: 60px;
+  position: relative;
+  display: block;
+  margin-bottom: 10px;
+}
+.m_chart .m_list .btn_imp{
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 5px;
+  right:0;
+  background: url(../img/icon10.png) no-repeat center / 30px;
+}
+.m_chart .m_list div{
+  width: 60px;
+  height: 60px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.m_chart .chart{
+  font-size: 12px;
+  position: absolute;
+  top: 26px;
+  left: 70px;
+}
+.m_chart .arrow{
+  width: 14px;
+  height: 14px;
+  position: absolute;
+  top: 25px;
+  left: 82px;
+  background: url(../img/arrow_b.png) no-repeat center / 14px auto;
+}
+.m_chart .arrow.a_down{
+  width: 14px;
+  height: 14px;
+  position: absolute;
+  top: 25px;
+  left: 82px;
+  background: url(../img/arrow_r.png) no-repeat center / 14px auto;
+}
+.m_chart .arrow.a_upper{
+  width: 14px;
+  height: 14px;
+  position: absolute;
+  top: 25px;
+  left: 82px;
+  background: url(../img/arrow_g.png) no-repeat center / 14px auto;
+}
+#container::after{
+  content: "";
+  display: block;
+  height: 110px;
+  width: 100%;
+}
+/* ================== #playbar ==================== */
+#playbar{
+  width: 100%;
+  height: 60px;
+  background-color: #a6abbd;
+  position: fixed;
+  bottom: 50px;
+  z-index: 90;
+  max-width: 450px;
+}
+.playtime{
+  display: block;
+  width: 60%;
+  height: 2px;
+  background-color: #448ef6;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 20;
+}
+#playbar h3{
+  font-size: 12px;
+  font-weight: 600;
+  position: absolute;
+  top: 13px;
+  left: 90px;
+}
+#playbar h4{
+  font-size: 12px;
+  font-weight: 400;
+  position: absolute;
+  top: 35px;
+  left: 90px;
+}
+#playbar div{
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-top: 5px;
+  margin-left: 20px;
+}
+#playbar .btn_pre{
+  display: block;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 0;
+  right: 80px;
+  background: url(../img/icon06.png) no-repeat center / 30px;
+  margin-top: 10px;
+}
+#playbar .btn_playing{
+  display: block;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 0;
+  right: 40px;
+  background: url(../img/icon07.png) no-repeat center / 30px;
+  margin-top: 10px;
+}
+#playbar .btn_next{
+  display: block;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 0;
+  right: 0px;
+  background: url(../img/icon09.png) no-repeat center / 30px;
+  margin-top: 10px;
+}
+
+/* ================== #bottom ==================== */
+#bottom{
+  width: 100%;
+  height: 50px;
+  background-color: #424656;
+  position: fixed;
+  bottom: 0;
+  z-index: 80;
+  max-width: 450px;
+}
+#bottom a{
+  display: block;
+  width: 30%;
+  height: 100%;
+  color: transparent;
+  font-size: 0;
+  background-repeat: no-repeat;
+  background-position: center;
+  float: left;
+  background-size: 25px auto;
+}
+#bottom a.go_home{
+  background-image: url(../img/icon03.png);
+  margin-right: 5%;
+}
+#bottom a.moreview{
+  background-image: url(../img/icon04.png);
+  margin-right: 5%;
+}
+#bottom a.go_playlist{
+  background-image: url(../img/icon05.png);
+  margin-right: 0;
+}
