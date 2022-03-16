@@ -302,6 +302,15 @@ li.on .btn_play{
   left: 82px;
   background: url(../img/arrow_g.png) no-repeat center / 14px auto;
 }
+
+.m_chart .slick-dots {
+  bottom: 7px;
+}
+
+.m_chart .slick-dotted.slick-slider {
+  margin-bottom: 0;
+}
+
 #container::after{
   content: "";
   display: block;
