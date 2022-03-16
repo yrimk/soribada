@@ -117,7 +117,7 @@ li.on .btn_play{
   width: 100%;
   position: relative;
   white-space: nowrap; 
-  overflow-x: scroll; 
+  overflow-x: hidden; 
   scrollbar-width: none;  
   -ms-overflow-style: none;
   overflow-y: hidden;
@@ -126,6 +126,7 @@ li.on .btn_play{
   margin-top: 10px;
   display: inline-block;
   width: 35%;
+  margin: 0 10px 0 10px;
 }
 .playing li.on{
   transform: scale(1.3);
@@ -148,7 +149,8 @@ li.on .btn_play{
 .playlist li{
   margin-top: 10px;
   display: inline-block;
-  width: 35%;
+  width: 50%;
+  margin: 0 10px 0 10px;
 }
 .playlist li:first-of-type{
   margin-left: 6%;
@@ -158,6 +160,8 @@ li.on .btn_play{
   border-radius: 10px;
   overflow: hidden;
   white-space: normal;
+  display: flex;
+  flex-wrap: wrap;
 }
 .playlist li .img_box img{
   width: 50%;
@@ -169,14 +173,10 @@ li.on .btn_play{
 
 /* ================== .rec_music ================== */
 .rec_music{
-  margin-top: 40px;
+  margin-top: 60px;
 }
 .rec_music ul{
   width: 100%;
-  white-space: nowrap; 
-  overflow-x: scroll; 
-  scrollbar-width: none;  
-  -ms-overflow-style: none;
 }
 .rec_music li{
   margin-top: 10px;
@@ -224,15 +224,11 @@ li.on .btn_play{
 
 /* ================== .m_chart ================== */
 .m_chart{
-  margin-top: 40px;
+  margin-top: 60px;
 }
 .m_chart ul{
   width: 100%;
   position: relative;
-  white-space: nowrap; 
-  overflow-x: scroll; 
-  scrollbar-width: none;  
-  -ms-overflow-style: none;
 }
 .m_chart li{
   margin-top: 10px;
